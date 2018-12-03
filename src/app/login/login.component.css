@@ -1,0 +1,47 @@
+.action-bar {
+  font-family: Roboto-Bold;
+}
+.dark {
+  background-color: #301217;
+}
+.dark TextField {
+  color:  #C4AFB4;
+}
+
+FlexboxLayout {
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url("~/app/images/mybackground.jpg");
+  }
+  StackLayout {
+    width: 300;
+    padding: 10 16;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+  }
+  Image {
+    margin-bottom: 10;
+    height: 150;
+    width: 150;
+  }
+  Button, TextField {
+    margin-bottom: 10;
+  }
+  .btn-primary {
+    background-color: #CB1D00;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: Roboto-Light;
+  }
+ .btn-secondary{
+  margin-left: 0;
+  margin-right: 0;
+  font-family: Roboto-Light;
+ }
+
+  TextField {
+    placeholder-color: #C4AFB4;
+    color: white;
+    font-family: Roboto-Thin;
+  }

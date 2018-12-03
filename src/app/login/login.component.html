@@ -1,0 +1,14 @@
+<Page>
+    <FlexboxLayout>
+        <StackLayout class="form" [class.dark]="!isLoggingIn">
+            <Image src="~/app/images/ngroceries.png" [isEnabled]=!processing></Image>
+            <TextField id="email" [(ngModel)]="user.email" [isEnabled]=!processing hint="email address" keyboardType="email" autocorrect="false" autocapitalizationType="none" class="input input-border"></TextField>
+            <TextField hint="password" [isEnabled]=!processing [text]="password" [(ngModel)]="user.password" secure="true" class="input input-border"></TextField>
+
+            <Button text="Sign in" [isEnabled]=!processing class="btn btn-primary" (tap)="login()"></Button>
+            <Button text="Sign up for Groceries" [isEnabled]=!processing class="btn-secondary" (tap)="signUp()"></Button>
+
+        </StackLayout>
+    </FlexboxLayout>
+    <ActivityIndicator [busy]=processing width="30" height="30" color = #CB1D00 ></ActivityIndicator>
+</Page>
