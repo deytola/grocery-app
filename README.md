@@ -13,9 +13,9 @@ npm install
 ```
 tns platform add android
 ```
-- After successful build, run the app by running the following command
+- After successful platform setup, build and deploy the app by running the following command
 ```
-tns run android
+tns run android --emulator
 ```
 
 **NB:** Please, have in mind that deploying on apple devices can only be achieved with a mac
