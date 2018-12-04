@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/deytola/grocery-app.svg?branch=master)](https://travis-ci.com/deytola/grocery-app)
+[![Build Status](https://travis-ci.com/deytola/grocery-app.svg?branch=master)](https://travis-ci.com/deytola/grocery-ap)
 # Grocery App Built with NativeScript and Angular for Android and IOS
 App templates help you jump start your native cross-platform apps with built-in UI elements and best practices. Save time writing boilerplate code over and over again when you create new apps.
 
