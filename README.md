@@ -1,22 +1,24 @@
-# NativeScript with Angular Blank Template
+# Grocery App Built with NativeScript and Angular
 App templates help you jump start your native cross-platform apps with built-in UI elements and best practices. Save time writing boilerplate code over and over again when you create new apps.
 
 ## Quick Start
-Execute the following command to create an app from this template:
+Clone the repository.
+Execute the following command to replicate this app:
 
+- Install required dependencies by running the following command
 ```
-tns create my-blank-ng --template tns-template-blank-ng
+npm install
+```
+- Add android or IOS platform by running the following command
+```
+tns platform add android
+```
+- After successful build, run the app by running the following command
+```
+tns run android
 ```
 
-> Note: This command will create a new NativeScript app that uses the latest version of this template published to [npm] (https://www.npmjs.com/package/tns-template-blank-ng).
-
-If you want to create a new app that uses the source of the template from the `master` branch, you can execute the following:
-
-```
-tns create my-blank-ng --template https://github.com/NativeScript/template-blank-ng
-```
-
-**NB:** Please, have in mind that the master branch may refer to dependencies that are not on NPM yet!
+**NB:** Please, have in mind that deploying on apple devices can only be achieved with a mac
 
 ## Walkthrough
 
@@ -24,20 +26,28 @@ tns create my-blank-ng --template https://github.com/NativeScript/template-blank
 The application component:
 - `app.component.ts` - sets up a page router outlet that lets you navigate between pages.
 
-There is a single blank component that sets up an empty page layout:
-- `/home`
+There are currently two components that setup a login page and a page which holds a ListView of grocery items:
+- `/login`
+- `/list`
 
-**Home** page has the following components:
+**Login** page has the following components:
 - `ActionBar` - It holds the title of the page.
-- `GridLayout` - The main page layout that should contains all the page content.
+- `GridLayout` - The main page layout that should contain all the page content.
+- `FlexBox` - It holds the form elements whose content would be submitted to a backend service on tap of login button.
+- `Button` - Submits page items on tap.
+
+**List** page has the following components:
+- `ActionBar` - It holds the title of the page.
+- `GridLayout` - The main page layout that should contain all the page content.
+- `ListView` - It holds an array of grocery items supplied from a backend service on load of the page.
 
 ## Get Help
 The NativeScript framework has a vibrant community that can help when you run into problems.
 
 Try [joining the NativeScript community Slack](http://developer.telerik.com/wp-login.php?action=slack-invitation). The Slack channel is a great place to get help troubleshooting problems, as well as connect with other NativeScript developers.
 
-If you have found an issue with this template, please report the problem in the [NativeScript repository](https://github.com/NativeScript/NativeScript/issues).
+If you have found an issue with this template, please report the problem in the [Grocery App Repository](https://github.com/deytola/grocery-app/issues).
 
 ## Contributing
 
-We love PRs, and accept them gladly. Feel free to propose changes and new ideas. We will review and discuss, so that they can be accepted and better integrated.
+I'd love PRs, and accept them gladly. Feel free to propose changes and new ideas. I'd definitely review and discuss, so that they can be accepted and better integrated.
