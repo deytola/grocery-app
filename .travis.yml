@@ -3,12 +3,6 @@ branches:
     - master
 matrix:
   include:
-    - stage: "Lint"
-      language: node_js
-      os: linux
-      node_js: "node"
-      install: true
-      script: npm i
     - stage: "Build"
       os: osx
       env: 
