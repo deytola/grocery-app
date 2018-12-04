@@ -10,10 +10,9 @@ matrix:
         - Xcode="10.0"
       osx_image: xcode10
       language: node_js 
-      node_js: "8"
+      node_js: "node"
       jdk: oraclejdk8
-      script:
-        - tns build ios --bundle --env.aot --env.uglify
+      
     - language: android
       env:
         - BuildAndroid="28"
@@ -26,7 +25,7 @@ matrix:
         - AndroidEmulator="23"
       language: node_js
       os: linux
-      node_js: "8"
+      node_js: "node"
       script:
       #  - npm i -g appium@1.8.0
         - npm i
@@ -34,7 +33,7 @@ matrix:
       env: 
         - iOS="11"
       language: node_js 
-      node_js: "8"
+      node_js: "node"
       script: 
       #  - npm i -g appium@1.8.0
         - npm i
