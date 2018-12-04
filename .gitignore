@@ -24,6 +24,30 @@ yarn-error.log*
 .project
 tmp/
 typings/
+report/
+lib/
+e2e/**/*.js
+e2e/reports/
+app/**/*.js
+
+
+npm-debug.log
+.DS_Store
+
+
+
+
+hooks/
+
+
+
+
+
+
+test-results.xml
+
+
+
 
 # Visual Studio Code
 .vscode/*
