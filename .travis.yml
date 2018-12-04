@@ -1,12 +1,3 @@
-env:
-  global:
-    - ANDROID_PACKAGE='GroceryProject.apk'
-    - ANDROID_PACKAGE_FOLDER=$TRAVIS_BUILD_DIR/platforms/android/app/build/outputs/apk/debug/
-    - ANDROID_SAUCE_STORAGE="https://saucelabs.com/rest/v1/storage/$SAUCE_USER/$ANDROID_PACKAGE?overwrite=true"
-    - IOS_PACKAGE='GroceryProject.zip'
-    - IOS_APP_NAME='GroceryProject.app'
-    - IOS_PACKAGE_FOLDER=$TRAVIS_BUILD_DIR/platforms/ios/build/emulator
-    - IOS_SAUCE_STORAGE="https://saucelabs.com/rest/v1/storage/$SAUCE_USER/$IOS_PACKAGE?overwrite=true"
 branches:
   only: 
     - master
