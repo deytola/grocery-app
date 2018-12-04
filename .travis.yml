@@ -8,7 +8,7 @@ matrix:
       os: linux
       node_js: "node"
       install: true
-      script: npm i && npm run tslint
+      script: npm i
     - stage: "Build"
       os: osx
       env: 
